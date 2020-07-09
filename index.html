@@ -2,15 +2,76 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://momentjs.com/downloads/moment.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/app.css">
+    <!-- FONTAWESONE -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <!-- HANDLEBARS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
     <title>NODE|SASS|TEAMBIT</title>
   </head>
   <body>
+    <div class="wrapper">
+      <nav class="ms_navi">
+        <div class="ms_logo">
+          <img src="ex-teambit/img/logo.svg" alt="logo">
+        </div>
+        <div class="ms_menu">
+          <ul>
+            <li>Solution</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+            <li>Sign in</li>
+            <li id="button-signup">
+              <img class="ms_icon" src="ex-teambit/img/google-logo.svg" alt="logo">Sign up</li>
+          </ul>
 
+        </div>
+
+      </nav>
+      <div class="ms_jumbotrom">
+        <div class="ms_cta-jumbo">
+          <h2>Understand, recognize and develop your people</h2>
+          <p>Teambit helps teams create a high performing culture with regular feedback.</p>
+          <div class="ms_buttons-jumbo">
+            <span class="button-blue">
+              <img class="ms_icon" src="ex-teambit/img/google-logo.svg" alt="logo">
+              Sign up with Google</span>
+              <span>or</span>
+            <span class="button-blue">
+              <img class="ms_icon" src="ex-teambit/img/slack-logo.svg" alt="logo">
+              Sign up with Slack</span>
+              <p>or use your email address -></p>
+          </div>
+        </div>
+
+        <div class="ms_img-jumbo">
+          <img src="ex-teambit/img/illustration-main.jpg" alt="img-jumbo">
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- TEMPLATES -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h1>{{title}}</h1>
+        <div class="body">
+          {{body}}
+        </div>
+      </div>
+    </script>
+    <!-- END TEMPLATES -->
+    <!-- SCRIPT -->
+    <script src="dist/app.js">
+    </script>
+    <!-- END SCRIPT -->
   </body>
 </html>
