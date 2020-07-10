@@ -5,59 +5,57 @@
   justify-content: space-between;
   border-bottom: 1px solid $color_text-primary;
   padding: 10px 0;
-  {
-    // Menu.
-    .ms_menu-hamburger {
-      display: none;
-    }
-    .ms_menu-hamburger i{
+  // Menu.
+  .ms_menu-hamburger {
+    display: none;
+    i{
       padding: 20px;
       display: flex;
       justify-content: flex-end;
     }
-    .ms_navi .ms_logo {
-      display: flex;
-      align-items: center;
-    }
-    .ms_menu li {
-      font-weight: bold;
-      padding: 0 15px;
-      display: inline-block;
-      list-style: none;
-    }
-
-    #button-signup {
-      background-color: #5b70aa;
-      color: #2d4691;
-      padding: 15px 8px;
-      border: 1px solid #5e72ac;
-      border-radius: 5px;
-    }
+  }
+  .ms_logo {
+    display: flex;
+    align-items: center;
+  }
+  .ms_menu li {
+    font-weight: bold;
+    padding: 0 15px;
+    display: inline-block;
+    list-style: none;
+  }
+  #button-signup {
+    background-color: #5b70aa;
+    color: #2d4691;
+    padding: 15px 8px;
+    border: 1px solid #5e72ac;
+    border-radius: 5px;
   }
 }
 
 // Jumbo.
 .ms_jumbotrom {
   display: flex;
-  {
-    .ms_cta-jumbo {
-      padding: 50px;
-      line-height: 50px;
-      width: 50%;
-    }
-    .ms_img-jumbo {
-      padding: 50px;
-      width: 50%;
-    }
-    .ms_img-jumbo img {
+  .ms_cta-jumbo {
+    padding: 50px;
+    line-height: 50px;
+    width: 50%;
+  }
+  .ms_img-jumbo {
+    padding: 50px;
+    width: 50%;
+    // Jumbo IMG
+    img {
       width: 100%;
     }
-
   }
 }
 
+
+
 // Media-query.
 @media screen and (max-width: 1080px){
+  // Navi menu
   .ms_navi {
     width: 90%;
     margin: auto;
@@ -65,37 +63,39 @@
     flex-direction: column;
     border: none;
     position: fixed;
+    z-index: 1;
+
+    .ms_menu-hamburger {
+      display: block;
+      .close {
+        display: none;
+      }
+    }
+    .ms_menu {
+      display: none;
+      li {
+        display: block;
+        margin: 30px 0;
+      }
+    }
+    .ms_logo {
+      padding-bottom: 20px;
+      justify-content: space-between;
+      border-bottom: 1px solid $color_text-primary;
+    }
+    #button-signup {
+      background-color: #ffff;
+      text-align: center;
+    }
   }
-  .ms_menu-hamburger {
-    display: block;
-  }
-  .ms_menu-hamburger .close {
-    display: none;
-  }
-  .ms_menu li {
-    display: block;
-    margin: 30px 0;
-  }
-  .ms_menu {
-    display: none;
-  }
-  .ms_logo {
-    padding-bottom: 20px;
-    justify-content: space-between;
-    border-bottom: 1px solid $color_text-primary;
-  }
-  #button-signup {
-    background-color: #ffff;
-    text-align: center;
-  }
-  // jumbo.
+  // Jumbo.
   .ms_jumbotrom {
     padding-top: 100px;
     width: 100%;
     flex-direction: column;
-  }
-  .ms_img-jumbo,
-  .ms_cta-jumbo {
-    width: 100%;
+    .ms_img-jumbo,
+    .ms_cta-jumbo {
+      width: 100%;
+    }
   }
 }

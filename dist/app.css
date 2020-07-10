@@ -21,6 +21,11 @@ h2 {
   line-height: 80px;
 }
 
+h3 {
+  font-size: 30px;
+  line-height: 50px;
+}
+
 .wrapper-80-90 {
   width: 80%;
   margin: auto;
@@ -33,28 +38,6 @@ h2 {
   }
 }
 
-.ms_menu-hamburger {
-  display: none;
-}
-
-.ms_menu-hamburger i {
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.ms_navi .ms_logo {
-  display: flex;
-  align-items: center;
-}
-
-.ms_menu li {
-  font-weight: bold;
-  padding: 0 15px;
-  display: inline-block;
-  list-style: none;
-}
-
 .button-blue {
   background-color: #2d4691;
   padding: 0 10px;
@@ -65,6 +48,12 @@ h2 {
   display: inline-block;
 }
 
+.ms_icon {
+  width: 25px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
 .ms_navi {
   display: flex;
   justify-content: space-between;
@@ -72,13 +61,29 @@ h2 {
   padding: 10px 0;
 }
 
-.ms_icon {
-  width: 25px;
-  vertical-align: middle;
-  padding-right: 5px;
+.ms_navi .ms_menu-hamburger {
+  display: none;
 }
 
-#button-signup {
+.ms_navi .ms_menu-hamburger i {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ms_navi .ms_logo {
+  display: flex;
+  align-items: center;
+}
+
+.ms_navi .ms_menu li {
+  font-weight: bold;
+  padding: 0 15px;
+  display: inline-block;
+  list-style: none;
+}
+
+.ms_navi #button-signup {
   background-color: #5b70aa;
   color: #2d4691;
   padding: 15px 8px;
@@ -90,18 +95,18 @@ h2 {
   display: flex;
 }
 
-.ms_cta-jumbo {
+.ms_jumbotrom .ms_cta-jumbo {
   padding: 50px;
   line-height: 50px;
   width: 50%;
 }
 
-.ms_img-jumbo {
+.ms_jumbotrom .ms_img-jumbo {
   padding: 50px;
   width: 50%;
 }
 
-.ms_img-jumbo img {
+.ms_jumbotrom .ms_img-jumbo img {
   width: 100%;
 }
 
@@ -113,32 +118,33 @@ h2 {
     flex-direction: column;
     border: none;
     position: fixed;
+    z-index: 1;
   }
 
-  .ms_menu-hamburger {
+  .ms_navi .ms_menu-hamburger {
     display: block;
   }
 
-  .ms_menu-hamburger .close {
+  .ms_navi .ms_menu-hamburger .close {
     display: none;
   }
 
-  .ms_menu li {
+  .ms_navi .ms_menu {
+    display: none;
+  }
+
+  .ms_navi .ms_menu li {
     display: block;
     margin: 30px 0;
   }
 
-  .ms_menu {
-    display: none;
-  }
-
-  .ms_logo {
+  .ms_navi .ms_logo {
     padding-bottom: 20px;
     justify-content: space-between;
     border-bottom: 1px solid #58402c;
   }
 
-  #button-signup {
+  .ms_navi #button-signup {
     background-color: #ffff;
     text-align: center;
   }
@@ -149,130 +155,110 @@ h2 {
     flex-direction: column;
   }
 
-  .ms_img-jumbo,
-  .ms_cta-jumbo {
+  .ms_jumbotrom .ms_img-jumbo,
+  .ms_jumbotrom .ms_cta-jumbo {
     width: 100%;
   }
 }
 
-.ms_menu-hamburger {
-  display: none;
+.section-a {
+  width: 100%;
+  background-color: #fde7d1;
 }
 
-.ms_menu-hamburger i {
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
+.section-a .wrapper-section-a {
+  padding: 50px 0;
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
-.ms_navi .ms_logo {
-  display: flex;
-  align-items: center;
-}
-
-.ms_menu li {
-  font-weight: bold;
-  padding: 0 15px;
-  display: inline-block;
-  list-style: none;
-}
-
-.button-blue {
-  background-color: #2d4691;
-  padding: 0 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  color: #ffff;
-  font-size: 15px;
-  display: inline-block;
-}
-
-.ms_navi {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #58402c;
-  padding: 10px 0;
-}
-
-.ms_icon {
-  width: 25px;
-  vertical-align: middle;
-  padding-right: 5px;
-}
-
-#button-signup {
-  background-color: #5b70aa;
-  color: #2d4691;
-  padding: 15px 8px;
-  border: 1px solid #5e72ac;
-  border-radius: 5px;
-}
-
-.ms_jumbotrom {
+.section-a .wrapper-section-a .wrapper-box {
+  margin: 50px 0;
+  width: 100%;
   display: flex;
 }
 
-.ms_cta-jumbo {
-  padding: 50px;
-  line-height: 50px;
-  width: 50%;
-}
-
-.ms_img-jumbo {
-  padding: 50px;
-  width: 50%;
-}
-
-.ms_img-jumbo img {
+.section-a .wrapper-section-a .wrapper-box .box {
   width: 100%;
 }
 
+.section-a .wrapper-section-a .wrapper-box .box img {
+  width: 80%;
+}
+
+.section-a .wrapper-section-a .img-section {
+  margin: 50px 0;
+  width: 40%;
+}
+
 @media screen and (max-width: 1080px) {
-  .ms_navi {
-    width: 90%;
+  .wrapper-box {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper-box .box {
+    margin: 40px 0;
+  }
+}
+
+.section-b {
+  width: 100%;
+  background: red;
+}
+
+.section-b .wrapper-section-b {
+  background: red;
+  float: left;
+  padding: 100px 0;
+  width: 80%;
+  display: flex;
+}
+
+.section-b .wrapper-section-b img {
+  width: 100%;
+}
+
+.section-b .wrapper-section-b .screen-section {
+  width: 70%;
+}
+
+.section-b .wrapper-section-b .info-section {
+  font-size: 30px;
+  width: 30%;
+}
+
+.section-b .wrapper-section-b h3,
+.section-b .wrapper-section-b p,
+.section-b .wrapper-section-b a,
+.section-b .wrapper-section-b img {
+  margin-bottom: 20px;
+}
+
+.section-b .wrapper-section-b.reverse {
+  flex-direction: row-reverse;
+  float: right;
+}
+
+@media screen and (max-width: 1080px) {
+  .section-b .wrapper-section-b,
+  .section-b .wrapper-section-b.reverse {
+    float: none;
     margin: auto;
-    background: #ffff;
     flex-direction: column;
-    border: none;
-    position: fixed;
+    align-items: center;
   }
 
-  .ms_menu-hamburger {
-    display: block;
-  }
-
-  .ms_menu-hamburger .close {
-    display: none;
-  }
-
-  .ms_menu li {
-    display: block;
-    margin: 30px 0;
-  }
-
-  .ms_menu {
-    display: none;
-  }
-
-  .ms_logo {
-    padding-bottom: 20px;
-    justify-content: space-between;
-    border-bottom: 1px solid #58402c;
-  }
-
-  #button-signup {
-    background-color: #ffff;
-    text-align: center;
-  }
-
-  .ms_jumbotrom {
-    padding-top: 100px;
+  .section-b .wrapper-section-b .screen-section,
+  .section-b .wrapper-section-b.reverse .screen-section {
     width: 100%;
-    flex-direction: column;
   }
 
-  .ms_img-jumbo,
-  .ms_cta-jumbo {
+  .section-b .wrapper-section-b .info-section,
+  .section-b .wrapper-section-b.reverse .info-section {
+    text-align: center;
+    font-size: 30px;
     width: 100%;
   }
 }

@@ -8,14 +8,17 @@
 /* General Settings */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #58402c;
+  color: $color_text-primary;
   min-width: 740px;
 }
 h2 {
   font-size: 50px;
   line-height: 80px;
 }
-
+h3 {
+  font-size: 30px;
+  line-height: 50px;
+}
 .wrapper-80-90 {
   width: 80%;
   margin: auto;
