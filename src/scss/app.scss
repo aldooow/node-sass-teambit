@@ -1,51 +1,52 @@
 @import 'partials/_variables';
 @import 'partials/_mixins';
 @import 'partials/_common';
-/* BEGIN RESET */
-* {
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* END RESET */
+@import 'partials/_jumbo';
 
-/* General Settings */
-body {
-  font-family: 'Roboto', sans-serif;
+
+
+
+// Menu.
+.ms_menu-hamburger {
+  display: none;
 }
-h2 {
-  font-size: 40px;
+.ms_menu-hamburger i{
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
-li {
+.ms_menu-hamburger-close {
+
+}
+.ms_navi .ms_logo {
+  display: flex;
+  align-items: center;
+}
+.ms_menu li {
+  font-weight: bold;
   padding: 0 15px;
-  list-style: none;
   display: inline-block;
+  list-style: none;
 }
 .button-blue {
   background-color: #2d4691;
-  padding: 8px 10px;
+  padding: 0 10px;
+  margin: 10px 0;
   border-radius: 5px;
   color: #ffff;
   font-size: 15px;
+  display: inline-block;
 }
-.wrapper {
-  width: 80%;
-  margin: auto;
+.ms_navi {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #58402c;
+  padding: 10px 0;
 }
 .ms_icon {
   width: 25px;
   vertical-align: middle;
   padding-right: 5px;
-}
-.ms_navi {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid black;
-  padding: 10px 0;
-}
-.ms_navi .ms_logo {
-  display: flex;
-  align-items: center;
 }
 #button-signup {
   background-color: #5b70aa;
@@ -54,7 +55,7 @@ li {
   border: 1px solid #5e72ac;
   border-radius: 5px;
 }
-// ----------
+// Jumbo.
 .ms_jumbotrom {
   display: flex;
 }
@@ -69,4 +70,48 @@ li {
 }
 .ms_img-jumbo img {
   width: 100%;
+}
+
+// Media-query.
+@media screen and (max-width: 1080px){
+  .ms_navi {
+    width: 90%;
+    margin: auto;
+    background: #ffff;
+    flex-direction: column;
+    border: none;
+    position: fixed;
+  }
+  .ms_menu-hamburger {
+    display: block;
+  }
+  .ms_menu-hamburger .close {
+    display: none;
+  }
+  .ms_menu li {
+    display: block;
+    margin: 30px 0;
+  }
+  .ms_menu {
+    display: none;
+  }
+  .ms_logo {
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #58402c;
+  }
+  #button-signup {
+    background-color: #ffff;
+    text-align: center;
+  }
+  // jumbo.
+  .ms_jumbotrom {
+    padding-top: 100px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .ms_img-jumbo,
+  .ms_cta-jumbo {
+    width: 100%;
+  }
 }

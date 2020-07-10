@@ -15,42 +15,47 @@
     <title>NODE|SASS|TEAMBIT</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper-80-90">
+
       <nav class="ms_navi">
         <div class="ms_logo">
-          <img src="ex-teambit/img/logo.svg" alt="logo">
-        </div>
-        <div class="ms_menu">
-          <ul>
-            <li>Solution</li>
-            <li>Pricing</li>
-            <li>Blog</li>
-            <li>Sign in</li>
-            <li id="button-signup">
-              <img class="ms_icon" src="ex-teambit/img/google-logo.svg" alt="logo">Sign up</li>
-          </ul>
+          <img src="img/logo.svg" alt="logo">
 
+          <div class="ms_menu-hamburger">
+            <i class="close fas fa-times"></i>
+            <i class="open fas fa-bars"></i>
+          </div>
         </div>
+
+        <ul class="ms_menu">
+          <li>Solution <i class="fas fa-chevron-down"></i></li>
+          <li>Pricing</li>
+          <li>Blog</li>
+          <li>Sign in</li>
+          <li id="button-signup">
+            <img class="ms_icon" src="img/google-logo.svg" alt="logo">Sign up</li>
+        </ul>
 
       </nav>
+
       <div class="ms_jumbotrom">
         <div class="ms_cta-jumbo">
           <h2>Understand, recognize and develop your people</h2>
           <p>Teambit helps teams create a high performing culture with regular feedback.</p>
           <div class="ms_buttons-jumbo">
             <span class="button-blue">
-              <img class="ms_icon" src="ex-teambit/img/google-logo.svg" alt="logo">
+              <img class="ms_icon" src="img/google-logo.svg" alt="logo">
               Sign up with Google</span>
               <span>or</span>
             <span class="button-blue">
-              <img class="ms_icon" src="ex-teambit/img/slack-logo.svg" alt="logo">
+              <img class="ms_icon" src="img/slack-logo.svg" alt="logo">
               Sign up with Slack</span>
-              <p>or use your email address -></p>
+              <p>or use your email address <i class="fas fa-arrow-right"></i></p>
           </div>
         </div>
 
         <div class="ms_img-jumbo">
-          <img src="ex-teambit/img/illustration-main.jpg" alt="img-jumbo">
+          <img src="img/illustration-main.jpg" alt="img-jumbo">
         </div>
       </div>
 
@@ -59,16 +64,7 @@
 
 
 
-    <!-- TEMPLATES -->
-    <script id="entry-template" type="text/x-handlebars-template">
-      <div class="entry">
-        <h1>{{title}}</h1>
-        <div class="body">
-          {{body}}
-        </div>
-      </div>
-    </script>
-    <!-- END TEMPLATES -->
+  
     <!-- SCRIPT -->
     <script src="dist/app.js">
     </script>

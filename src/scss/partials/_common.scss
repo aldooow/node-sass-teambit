@@ -1,0 +1,44 @@
+/* BEGIN RESET */
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* END RESET */
+/* General Settings */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #58402c;
+  min-width: 740px;
+}
+h2 {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.wrapper-80-90 {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+@media screen and (max-width: 1080px){
+  .wrapper-80-90 {
+    width: 90%;
+  }
+}
+// Button Social
+.button-blue {
+  background-color: $color_button;
+  padding: 0 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #ffff;
+  font-size: 15px;
+  display: inline-block;
+}
+.ms_icon {
+  width: 25px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+// END Button Social

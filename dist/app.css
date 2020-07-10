@@ -12,47 +12,70 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #58402c;
+  min-width: 740px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
+  line-height: 80px;
 }
 
-li {
+.wrapper-80-90 {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1080px) {
+  .wrapper-80-90 {
+    width: 90%;
+  }
+}
+
+.ms_menu-hamburger {
+  display: none;
+}
+
+.ms_menu-hamburger i {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ms_navi .ms_logo {
+  display: flex;
+  align-items: center;
+}
+
+.ms_menu li {
+  font-weight: bold;
   padding: 0 15px;
-  list-style: none;
   display: inline-block;
+  list-style: none;
 }
 
 .button-blue {
   background-color: #2d4691;
-  padding: 8px 10px;
+  padding: 0 10px;
+  margin: 10px 0;
   border-radius: 5px;
   color: #ffff;
   font-size: 15px;
+  display: inline-block;
 }
 
-.wrapper {
-  width: 80%;
-  margin: auto;
+.ms_navi {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #58402c;
+  padding: 10px 0;
 }
 
 .ms_icon {
   width: 25px;
   vertical-align: middle;
   padding-right: 5px;
-}
-
-.ms_navi {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid black;
-  padding: 10px 0;
-}
-
-.ms_navi .ms_logo {
-  display: flex;
-  align-items: center;
 }
 
 #button-signup {
@@ -80,5 +103,177 @@ li {
 
 .ms_img-jumbo img {
   width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .ms_navi {
+    width: 90%;
+    margin: auto;
+    background: #ffff;
+    flex-direction: column;
+    border: none;
+    position: fixed;
+  }
+
+  .ms_menu-hamburger {
+    display: block;
+  }
+
+  .ms_menu-hamburger .close {
+    display: none;
+  }
+
+  .ms_menu li {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .ms_menu {
+    display: none;
+  }
+
+  .ms_logo {
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #58402c;
+  }
+
+  #button-signup {
+    background-color: #ffff;
+    text-align: center;
+  }
+
+  .ms_jumbotrom {
+    padding-top: 100px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .ms_img-jumbo,
+  .ms_cta-jumbo {
+    width: 100%;
+  }
+}
+
+.ms_menu-hamburger {
+  display: none;
+}
+
+.ms_menu-hamburger i {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ms_navi .ms_logo {
+  display: flex;
+  align-items: center;
+}
+
+.ms_menu li {
+  font-weight: bold;
+  padding: 0 15px;
+  display: inline-block;
+  list-style: none;
+}
+
+.button-blue {
+  background-color: #2d4691;
+  padding: 0 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #ffff;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.ms_navi {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #58402c;
+  padding: 10px 0;
+}
+
+.ms_icon {
+  width: 25px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+#button-signup {
+  background-color: #5b70aa;
+  color: #2d4691;
+  padding: 15px 8px;
+  border: 1px solid #5e72ac;
+  border-radius: 5px;
+}
+
+.ms_jumbotrom {
+  display: flex;
+}
+
+.ms_cta-jumbo {
+  padding: 50px;
+  line-height: 50px;
+  width: 50%;
+}
+
+.ms_img-jumbo {
+  padding: 50px;
+  width: 50%;
+}
+
+.ms_img-jumbo img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .ms_navi {
+    width: 90%;
+    margin: auto;
+    background: #ffff;
+    flex-direction: column;
+    border: none;
+    position: fixed;
+  }
+
+  .ms_menu-hamburger {
+    display: block;
+  }
+
+  .ms_menu-hamburger .close {
+    display: none;
+  }
+
+  .ms_menu li {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .ms_menu {
+    display: none;
+  }
+
+  .ms_logo {
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #58402c;
+  }
+
+  #button-signup {
+    background-color: #ffff;
+    text-align: center;
+  }
+
+  .ms_jumbotrom {
+    padding-top: 100px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .ms_img-jumbo,
+  .ms_cta-jumbo {
+    width: 100%;
+  }
 }
 
