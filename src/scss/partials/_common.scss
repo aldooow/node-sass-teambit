@@ -25,7 +25,9 @@ p {
 .wrapper-80-90 {
   width: 80%;
   margin: auto;
-
+}
+li {
+  list-style: none;
 }
 @media screen and (max-width: 1080px){
   .wrapper-80-90 {

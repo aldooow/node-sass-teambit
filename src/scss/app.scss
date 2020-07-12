@@ -4,28 +4,4 @@
 @import 'partials/_jumbo';
 @import 'partials/_sections-a';
 @import 'partials/_sections-b';
-
-// Footer
-.footer {
-  flex-wrap: wrap;
-  display: flex;
-  padding: 50px 0;
-}
-.footer-cit {
-  background: red;
-  width: calc(100% / 7 * 2);
-}
-.footer-list {
-  background: green;
-  width: calc(100% / 7)
-}
-@media screen and (max-width: 1080px){
-  .footer {
-    .footer-cit {
-      width: 100%;
-    }
-    .footer-list {
-      width: calc(100% / 3)
-    }
-  }
-}
+@import 'partials/_footer';

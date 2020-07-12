@@ -35,6 +35,10 @@ p {
   margin: auto;
 }
 
+li {
+  list-style: none;
+}
+
 @media screen and (max-width: 1080px) {
   .wrapper-80-90 {
     width: 90%;
@@ -299,19 +303,23 @@ p {
 }
 
 .footer {
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   padding: 50px 0;
 }
 
-.footer-cit {
-  background: red;
+.footer-message {
+  padding: 10px;
   width: calc(100% / 7 * 2);
 }
 
 .footer-list {
-  background: green;
+  padding: 10px;
   width: calc(100% / 7);
+}
+
+.footer-list li {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1080px) {
