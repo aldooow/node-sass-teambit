@@ -6,5 +6,5 @@ $(document).ready(
       $('.open').toggle();
       $('.close').toggle();
     });
-
+    
   });

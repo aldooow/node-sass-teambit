@@ -5,3 +5,11 @@
   width: 80%;
   margin: auto;
 }
+
+// Prova di Mediaquery per un width.
+@mixin width {
+  width: 50%;
+  @media screen and (max-width: 1080px){
+      width: 90%;
+  }
+}

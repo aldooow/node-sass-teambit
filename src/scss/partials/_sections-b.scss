@@ -1,0 +1,57 @@
+// Section B
+.section-b {
+  width: 100%;
+  .wrapper-section-b {
+    @include section;
+    float: left;
+    display: flex;
+    img {
+      width: 100%;
+    }
+    .screen-section {
+      width: 70%;
+    }
+    .info-section {
+      width: 30%;
+    }
+    h3,p,a,img {
+      margin-bottom: 50px;
+    }
+  }
+  // Reverse
+  .wrapper-section-b.reverse {
+    flex-direction: row-reverse;
+    float: right;
+  }
+}
+// Media-query Section B.
+@media screen and (max-width: 1080px){
+  .section-b {
+    .wrapper-section-b,
+    .wrapper-section-b.reverse {
+      padding: 25px 0;
+      float: none;
+      flex-direction: column;
+      .screen-section,
+      .info-section {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.box-message {
+  @include width;
+  padding: 30px;
+  background-color: #ffff;
+  border: 1px solid $color_button;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+// Ho provato a fare un @mixin con una Media-query.
+// @media screen and (max-width: 1080px){
+//   .box-message {
+//     width: 90%;
+//   }
+// }

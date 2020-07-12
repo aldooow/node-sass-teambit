@@ -2,89 +2,30 @@
 @import 'partials/_mixins';
 @import 'partials/_common';
 @import 'partials/_jumbo';
+@import 'partials/_sections-a';
+@import 'partials/_sections-b';
 
-// Section A
-.section-a {
-  width: 100%;
-  background-color: $color_background-secondary;
-  .wrapper-section-a {
-    @include section;
-    .wrapper-box {
-      margin: 50px 0;
-      width: 100%;
-      display: flex;
-      .box {
-        width: 100%;
-        img {
-          width: 80%;
-        }
-      }
-    }
-    .img-section {
-      margin: 50px 0;
-      width: 40%;
-    }
-  }
+// Footer
+.footer {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 50px 0;
 }
-
-@media screen and (max-width: 1080px){
-  .wrapper-box {
-    align-items: center;
-    flex-direction: column;
-    .box {
-      margin: 40px 0;
-    }
-  }
-}
-// Section B
-.section-b {
-  width: 100%;
+.footer-cit {
   background: red;
-  .wrapper-section-b {
-      background: red;
-    float: left;
-    padding: 100px 0;
-    width: 80%;
-    display: flex;
-    img {
+  width: calc(100% / 7 * 2);
+}
+.footer-list {
+  background: green;
+  width: calc(100% / 7)
+}
+@media screen and (max-width: 1080px){
+  .footer {
+    .footer-cit {
       width: 100%;
     }
-    .screen-section {
-      width: 70%;
-    }
-    .info-section {
-      font-size: 30px;
-      width: 30%;
-    }
-    h3,p,a,img {
-      margin-bottom: 20px;
+    .footer-list {
+      width: calc(100% / 3)
     }
   }
-  // Reverse
-  .wrapper-section-b.reverse {
-    flex-direction: row-reverse;
-    float: right;
-  }
-}
-
-
-@media screen and (max-width: 1080px){
-  .section-b {
-    .wrapper-section-b,
-    .wrapper-section-b.reverse {
-      float: none;
-      margin: auto;
-      flex-direction: column;
-      align-items: center;
-      .screen-section {
-        width: 100%;
-      }
-      .info-section {
-        text-align: center;
-        font-size: 30px;
-        width: 100%;
-      }
-    }
-  }
-
 }
