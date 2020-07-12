@@ -288,7 +288,9 @@ li {
 }
 
 .box-message {
+  position: relative;
   width: 50%;
+  text-align: left;
   padding: 30px;
   background-color: #ffff;
   border: 1px solid #2d4691;
@@ -300,6 +302,29 @@ li {
   .box-message {
     width: 90%;
   }
+}
+
+.box-message .icon {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  font-size: 50px;
+}
+
+.box-message .cit-message {
+  margin: 25px 0;
+}
+
+.box-message .cit-message img {
+  vertical-align: middle;
+}
+
+.box-message .cit-message span {
+  display: inline-block;
+}
+
+.box-message .cit-message span .name-blue {
+  color: #2d4691;
 }
 
 .footer {

@@ -40,14 +40,35 @@
   }
 }
 
-
 .box-message {
+  position: relative;
   @include width;
+  text-align: left;
   padding: 30px;
   background-color: #ffff;
   border: 1px solid $color_button;
   border-radius: 10px;
   margin: 50px auto;
+  .icon {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    font-size: 50px;
+  }
+  .cit-message {
+    margin: 25px 0;
+    img{
+      vertical-align: middle;
+    }
+    span {
+      display: inline-block;
+      .name-blue {
+        color: $color_button;
+      }
+    }
+  }
+
+
 }
 // Ho provato a fare un @mixin con una Media-query.
 // @media screen and (max-width: 1080px){
